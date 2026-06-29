@@ -49,7 +49,7 @@
 
 - name: 
   role: Designer
-  photo: /assets/images/exec_photos/sydney.png
+  photo: /assets/images/exec_photos/temp_unknown.png
   socials:
     - type: instagram
       url: "#"

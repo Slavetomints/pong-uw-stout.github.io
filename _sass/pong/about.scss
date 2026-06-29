@@ -10,6 +10,7 @@
 	width: 1482px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 1em;
 }
 
 .exec_container {
@@ -18,7 +19,7 @@
 
 .exec_capsule {
 	width: 474px;
-	height: 138px;
+	height: 144px;
 	background-color: #f9fcff;
 	color:#02020c;
 	margin-right: 30px;
@@ -31,13 +32,13 @@
 
 .exec_capsule img {
 	width: 138x;
-	height: 138px;
+	height: 144px;
 }
 
 .exec_capsule_header {
 	background-color: #f79423;
 	color:#f9fcff;
-	width: 336px;
+	width: 330px;
 	height: 84px;
 }
 
@@ -55,7 +56,23 @@
 .exec_capsule_role {margin-left:30px;}
 
 .exec_capsule_link {
-	width:54px;
-	height:54px;
-	background-color:red;
+	width: 60px;
+	height: 60px;
+}
+
+.exec_capsule_link_container a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.exec_capsule_link_container a i {
+	font-size: 2em;
+	color: white;
+	transition: transform 0.2s ease;
+}
+
+.exec_capsule_link_container a i:hover {
+	transform: scale(1.5);
 }
