@@ -1,0 +1,98 @@
+# _data/execs.yml
+# One entry per exec, order here is display order on /about/.
+# socials is a list of {type, url} pairs, list length can vary per person.
+# `type` should match an icon filename in /assets/icons/ (e.g. type: twitter -> /assets/icons/twitter.svg)
+# url: "#" is a placeholder, swap in the real link when you have it.
+
+- name: 
+  role: President
+  photo: /assets/images/exec_photos/temp_unknown.png
+  socials:
+    - type: twitter
+      url: "#"
+    - type: linkedin
+      url: "#"
+
+- name: 
+  role: Vice President
+  photo: /assets/images/exec_photos/temp_unknown.png
+  socials:
+    - type: twitter
+      url: "#"
+    - type: linkedin
+      url: "#"
+
+- name: 
+  role: Treasurer
+  photo: /assets/images/exec_photos/temp_unknown.png
+  socials:
+    - type: twitter
+      url: "#"
+    - type: linkedin
+      url: "#"
+
+- name: 
+  role: Event Coordinator
+  photo: /assets/images/exec_photos/temp_unknown.png
+  socials:
+    - type: instagram
+      url: "#"
+    - type: linkedin
+      url: "#"
+
+- name:
+  role: Games Coordinator
+  photo: /assets/images/exec_photos/temp_unknown.png
+  socials:
+    - type: discord
+      url: "#"
+
+- name: 
+  role: Designer
+  photo: /assets/images/exec_photos/sydney.png
+  socials:
+    - type: instagram
+      url: "#"
+    - type: linkedin
+      url: "#"
+
+- name: 
+  role: Promoter
+  photo: /assets/images/exec_photos/temp_unknown.png
+  socials:
+    - type: instagram
+      url: "#"
+
+- name: 
+  role: Ambassador
+  photo: /assets/images/exec_photos/temp_unknown.png
+  socials:
+    - type: linkedin
+      url: "#"
+
+- name: 
+  role: Server Administrator
+  photo: /assets/images/exec_photos/temp_unknown.png
+  socials:
+    - type: twitter
+      url: "#"
+    - type: discord
+      url: "#"
+
+- name: 
+  role: Network Administrator
+  photo: /assets/images/exec_photos/temp_unknown.png
+  socials:
+    - type: twitter
+      url: "#"
+    - type: discord
+      url: "#"
+
+- name: 
+  role: Web Administrator
+  photo: /assets/images/exec_photos/temp_unknown.png
+  socials:
+    - type: twitter
+      url: "#"
+    - type: linkedin
+      url: "#"

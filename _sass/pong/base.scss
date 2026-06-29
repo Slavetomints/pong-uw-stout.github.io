@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+html {
+	background-color: $light;
+	font-family: "cocogoose";
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#content {
+    padding: 15px;
+    margin: 15px;
+}
+
+.dark_bg {
+	background-color: $dark;
+	color: $light;
+}
+
+.flex {display: flex;}
+.block {display: block;}

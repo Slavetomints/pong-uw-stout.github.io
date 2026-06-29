@@ -1,0 +1,13 @@
+<nav class="flex dark_bg">
+
+    <a href="/index.html"><img class="header_logo" src="/assets/pong_banner-logo_v1.webp"></a>
+
+    <ul class="flex">
+        {% for tab in site.tabs %}
+        <li class="header_button"><a href="{{ tab.url | relative_url }}"
+                class="{% if page.url == tab.url %}active{% endif %}">
+                {{ tab.title }}
+            </a></li>
+        {% endfor %}
+    </ul>
+</nav>
