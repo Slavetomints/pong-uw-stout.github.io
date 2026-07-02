@@ -32,6 +32,10 @@ link:
   icon: "fa-solid fa-link"
   color: "#000000"
 
+linktree:
+  icon: "fa-brands fa-linktree"
+  coloor: "#43e660"
+
 youtube:
   icon: "fa-brands fa-youtube"
   color: "#FF0000"
