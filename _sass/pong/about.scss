@@ -1,43 +1,44 @@
-
 .about_page_text_container {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-	width: 642px;
+	max-width: 642px;
+	width: 100%;
+	margin: 0 auto 30px auto;
+	padding: 0 1rem;
 }
 
 .exec_content_container {
-	width: 1482px;
+	max-width: 1482px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 1em;
 }
 
 .exec_container {
+	display: flex;
 	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .exec_capsule {
-	width: 474px;
+	flex: 1 1 320px;
+	max-width: 474px;
+
 	height: 144px;
 	background-color: #f9fcff;
-	color:#02020c;
-	margin-right: 30px;
-	margin-bottom: 30px;
-}
-
-.exec_capsule:nth-of-type(3n) {
-	margin-right: 0px;
+	color: #02020c;
 }
 
 .exec_capsule img {
 	width: 138px;
 	height: 144px;
+	object-fit: cover;
 }
 
 .exec_capsule_header {
 	background-color: #f79423;
-	color:#f9fcff;
+	color: #f9fcff;
 	width: 336px;
 	height: 84px;
 }
@@ -49,11 +50,13 @@
 .exec_capsule_name {
 	font-family: "pong_cocogoose";
 	font-size: 20px;
-	margin-left:30px;
+	margin-left: 30px;
 	margin-bottom: 5px;
 }
 
-.exec_capsule_role {margin-left:30px;}
+.exec_capsule_role {
+	margin-left: 30px;
+}
 
 .exec_capsule_link {
 	width: 60px;
