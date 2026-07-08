@@ -29,9 +29,17 @@ defaults:
       layout: post
       permalink: /posts/:title/
       toc: true
+  - scope:
+      path: ""
+      type: lans
+    values:
+      layout: lan
+      permalink: /lans/:title/
 
 collections:
   tabs:
     output: true
     permalink: /:name/
     sort_by: order
+  lans:
+    output: true

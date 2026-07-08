@@ -1,0 +1,28 @@
+socials:
+  - type: linkedin
+    url: https://www.linkedin.com/company/ponguwstout/
+  - type: github
+    url: https://github.com/PONG-UW-STOUT
+  - type: discord
+    url: https://discord.gg/pong
+  - type: instagram
+    url: https://www.instagram.com/ponguwstout/
+  - type: steam
+    url: https://steamcommunity.com/groups/PONG
+  - type: link
+    url: https://ponglan.net/
+  - type: linktree
+    url: https://linktr.ee/uwstoutpong
+  - type: email
+    url: pong@uwstout.edu
+  - type: twitch
+    url: https://www.twitch.tv/ponguwstout
+  - type: facebook
+    url: https://www.facebook.com/ponguwstout/
+
+next_lan:
+  name: To Be Announced
+#  banner:
+  start_date: To Be Announced
+  end_date: To Be Announced
+  details_url:
