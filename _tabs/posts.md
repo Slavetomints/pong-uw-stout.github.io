@@ -1,11 +1,11 @@
 ---
 layout: default
 permalink: /posts/
-order: 2
+order: 5
 ---
 
 # Posts
-
+<hr>
 <ul class="post-list">
   {% for post in site.posts %}
     <li class="post-item">
