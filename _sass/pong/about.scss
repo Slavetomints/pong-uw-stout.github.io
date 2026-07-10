@@ -47,6 +47,7 @@
 
 .exec_capsule_header_text_container {
 	padding-top: 21.5px;
+	color: $dark !important;
 }
 
 .exec_capsule_name {
@@ -145,5 +146,12 @@
 	.exec_capsule_link {
 		width: 60px;
 		height: 60px;
+	}
+}
+
+@media (max-width: $breakpoint-tablet) {
+	.about_page_text_container {
+		margin-left: 0%;
+		margin-right: 0%; 
 	}
 }

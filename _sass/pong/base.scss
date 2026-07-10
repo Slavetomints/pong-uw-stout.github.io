@@ -26,6 +26,44 @@ body {
     margin: 15px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+time,
+.number {
+    font-family: "pong_cocogoose";
+}
+
+.exec {
+    background-color: $exec-color;
+}
+
+.staff {
+    background-color: $staff-color;
+}
+.mentor {
+    background-color: $mentor-color;
+}
+
+.advisor {
+    background-color: $advisor-color;
+}
+
+.platinum {
+    background-color: $platinum-color;
+}
+
+.gold {
+    background-color: $gold-color;
+}
+
+.diamond {
+    background-color: $diamond-color;
+}
+
 .dark_bg {
 	background-color: $dark;
 	color: $light;

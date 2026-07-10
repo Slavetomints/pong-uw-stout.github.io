@@ -39,3 +39,19 @@ linktree:
 youtube:
   icon: "fa-brands fa-youtube"
   color: "#FF0000"
+
+email:
+  icon: "fa-regular fa-envelope"
+  color: "#000000"
+
+twitch:
+  icon: "fa-brands fa-twitch"
+  color: "#9146FF"
+
+facebook:
+  icon: "fa-brands fa-facebook"
+  color: "#0866FF"
+
+bluesky:
+  icon: "fa-brands fa-bluesky"
+  color: "#0886fe"
