@@ -1,36 +1,44 @@
 ---
 layout: default
 permalink: /about/
-order: 1
+order: 2
 ---
 
-<div>
-    <div class="about_page_text_container">
-        <h1>About Us</h1>
-        <p>Meet our execs and staff members!</p>
-    </div>
+<div class="about_page_text_container">
+    <h1>About Us</h1>
+    <hr>
+    <h2><em>What is PONG?</em></h2>
+    <p>The People’s Organization of Network Gaming, or “PONG” is a student organization at the University of Wisconsin-Stout made up of students, alumni, and friends that are passionate about video games. There is no special requirement to be a member, you don't even need to be a Stout student! You may need a moderate tolerance for cringe memes.</p>
+    <p>PONG’s premier focus are LAN Party events that are hosted on UW-Stout’s Campus in the Memorial Student Center. These LAN events are run by PONG’s Executive Board, but also with the help of members of the organization. Two LAN Events are held per semester, with a total of four during each school year. These events run from <time>4:00 PM Friday</time> to <time>4:00 PM Sunday</time> for <span class="number">48 hours</span> of non-stop fun. Some activities you can find at a LAN include party games, group photos, prize drawings, and plenty of tournaments.</p>
+    <p>The bottom line is that we want to make an enjoyable experience for all, regardless of games you like, how often you play, and anything in between. Come with us and have a good time!</p>
+    <br>
+    <h2>Meet our execs and staff members!</h2>
 </div>
 
 <div class="dark_bg">
-   <div class="exec_content_container">
+   <div class="content_container">
         <h1>Execs</h1>
-        <div class="flex exec_container">
+        <div class="flex container">
             {% for exec in site.data.execs %}
-                <div class="flex exec_capsule">
+                <div class="flex capsule">
                     <img src="{{ exec.photo }}" alt="photo of {{exec.name}}">
                     <div class="block">
-                        <div class="exec_capsule_header">
-                            <div class="exec_capsule_header_text_container">
-                                <div class="exec_capsule_name">{{exec.name}}</div>
-                                <div class="exec_capsule_role">{{exec.role}}</div>
+                        <div class="capsule_header exec">
+                            <div class="capsule_header_text_container">
+                                <div class="capsule_name">{{exec.name}}</div>
+                                <div class="capsule_role">{{exec.role}}</div>
                             </div>
                         </div>
-                        <div class="flex exec_capsule_link_container">
+                        <div class="flex capsule_link_container">
                             {% for social in exec.socials %}
-                            <a href="{{ social.url }}" class="exec_capsule_link" target="_blank" rel="noopener"  style="background-color: {{site.data.socials[social.type].color}};">
-                                <i class="{{ site.data.socials[social.type].icon}}"></i>
-                            </a>
-                            {% endfor %}   
+                                {% assign href = social.url %}
+                                {% if social.type == "email" %}
+                                    {% assign href = "mailto:" | append: social.url %}
+                                {% endif %}
+                                <a href="{{ href }}" class="capsule_link" target="_blank" rel="noopener" style="background-color: {{ site.data.socials[social.type].color }};">
+                                    <i class="{{ site.data.socials[social.type].icon }}"></i>
+                                </a>
+                            {% endfor %}  
                         </div>
                     </div>
                 </div>
@@ -41,33 +49,35 @@ order: 1
 <br>
 
 <div class="dark_bg">
-   <div class="exec_content_container">
+   <div class="content_container">
         <h1>Staff</h1>
-        <div class="flex exec_container">
+        <div class="flex container">
             {% for staff in site.data.staff %}
-                <div class="flex exec_capsule">
+                <div class="flex capsule">
                     <img src="{{ staff.photo }}" alt="photo of {{staff.name}}">
                     <div class="block">
-                        <div class="exec_capsule_header">
-                            <div class="exec_capsule_header_text_container">
-                                <div class="exec_capsule_name">{{staff.name}}</div>
-                                <div class="exec_capsule_role">{{staff.role}}</div>
+                        <div class="capsule_header staff">
+                            <div class="capsule_header_text_container">
+                                <div class="capsule_name">{{staff.name}}</div>
+                                <div class="capsule_role">{{staff.role}}</div>
                             </div>
                         </div>
-                        <div class="flex exec_capsule_link_container">
+                        <div class="flex capsule_link_container">
                             {% for social in staff.socials %}
-                            <a href="{{ social.url }}" class="exec_capsule_link" target="_blank" rel="noopener"  style="background-color: {{site.data.socials[social.type].color}};">
-                                <i class="fa-brands fa-{{ site.data.socials[social.type].icon}}"></i>
-                            </a>
-                            {% endfor %}   
+                                {% assign href = social.url %}
+                                {% if social.type == "email" %}
+                                    {% assign href = "mailto:" | append: social.url %}
+                                {% endif %}
+                                <a href="{{ href }}" class="capsule_link" target="_blank" rel="noopener" style="background-color: {{ site.data.socials[social.type].color }};">
+                                    <i class="{{ site.data.socials[social.type].icon }}"></i>
+                                </a>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
             {% endfor %}
         </div>
     </div>
-<<<<<<< Updated upstream
-=======
 </div>
 <br>
 
@@ -234,6 +244,7 @@ order: 1
   </div>
 </div>
 
+</div>
 
 <br>
 <div class="flex flex-column center">
@@ -250,5 +261,4 @@ order: 1
             </a>
         {% endfor %}
     </div>
->>>>>>> Stashed changes
 </div>
